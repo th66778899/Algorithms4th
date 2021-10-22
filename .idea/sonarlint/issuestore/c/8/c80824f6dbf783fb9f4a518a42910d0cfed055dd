@@ -1,0 +1,7 @@
+
+s	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÿ»ΤM8έκ‚―/
+t	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(―ΐΪθ8§Ά‚―/
+t	java:S127+"XRefactor the code in order to not assign to this loop counter from within the loop body.(―ΐΪθ8¬΅³‚―/
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™”€ωÿÿÿÿ8ΰΧ£°―/
+s	java:S127'"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÿ»ΤM8ϊ½®‚―/

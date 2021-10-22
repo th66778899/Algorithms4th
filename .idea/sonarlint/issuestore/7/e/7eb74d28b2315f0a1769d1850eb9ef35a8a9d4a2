@@ -1,0 +1,12 @@
+
+j	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(––Œøÿÿÿÿ8èÓÖÑ˜/
+£
+java:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦³üëûÿÿÿÿ8éöİÑ˜/
+k
+java:S2272I"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(‚ÑÑŞ8ØéÜÑ˜/
+K
+java:S1940F")Use the opposite operator (">=") instead.(ê€­÷úÿÿÿÿ8¿°”Ò˜/
+Z
+java:S1197	"8Move the array designator from the variable to the type.(Åì‰Æûÿÿÿÿ8íÉÑÑ˜/
+\
+java:S1161P":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ8éöİÑ˜/

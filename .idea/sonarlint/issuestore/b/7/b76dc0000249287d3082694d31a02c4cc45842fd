@@ -1,0 +1,9 @@
+
+L
+java:S1481–")Remove this unused "str1" local variable.(“üĞ¹ûÿÿÿÿ8Ú–ó°–/
+H
+java:S1481˜"*Remove this unused "aChar" local variable.(Ã›Ÿÿ8¡¼±–/
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Õf
+n	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÊ“µ8ï©î°–/
+X
+java:S2094"BRemove this empty class, write its code or make it an "interface".(×ÉæÆ

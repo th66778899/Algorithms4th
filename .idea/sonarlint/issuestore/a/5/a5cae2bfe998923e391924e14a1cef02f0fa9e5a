@@ -1,0 +1,10 @@
+
+k
+java:S2272\"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(‚ÑÑŞ8êúÖ‹/
+\
+java:S1161b":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ8ÿŞÖ‹/
+e	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ı×Á8ÌöÕ‹/
+£
+java:S1186b"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦³üëûÿÿÿÿ8ÿŞÖ‹/
+p
+java:S1192'"SDefine a constant instead of duplicating this literal "------------------" 3 times.(È©ƒ«8ûü„×‹/

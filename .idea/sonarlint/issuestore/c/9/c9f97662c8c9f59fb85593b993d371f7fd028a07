@@ -1,0 +1,22 @@
+
+Z
+java:S1197"8Move the array designator from the variable to the type.(ÛŠ•†ûÿÿÿÿ8íó—ç˜/
+_
+java:S1128"BRemove this unused import 'com.sun.org.apache.regexp.internal.RE'.(÷—•–8Öİ›ç˜/
+>
+java:S1659	""Declare "rear" on a separate line.(Ø­®u8“•ƒç˜/
+>
+java:S1659	""Declare "size" on a separate line.(Ø­®u8“•ƒç˜/
+t	java:S116
+"SRename this field "CAPACITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹òØÌşÿÿÿÿ8“•ƒç˜/
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(÷—•–8Öİ›ç˜/
+d	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(”8íó—ç˜/
+\
+java:S1161'":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ8íó—ç˜/
+£
+java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦³üëûÿÿÿÿ8íó—ç˜/
+k
+java:S2272"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(‚ÑÑŞ8íó—ç˜/
+8
+java:S3626/"Remove this redundant jump.(ûÁİ…8Öİ›ç˜/

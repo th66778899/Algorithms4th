@@ -1,0 +1,16 @@
+
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(ºğ“´8ÊË¶‘¯/
+[
+java:S1197Í"8Move the array designator from the variable to the type.(øÖÒÍøÿÿÿÿ8ËÛğ”¯/
+V
+java:S1128"9Remove this unused import 'netscape.security.UserTarget'.(·ö’é8ê¦¸“¯/
+o
+java:S3008Ï"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8ÚÖñ”¯/
+X
+java:S1128";Remove this unused import 'sun.reflect.generics.tree.Tree'.(ºğ“´8ÊË¶‘¯/
+k	java:S100Ğ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§š å8¬—ó”¯/
+S
+java:S2209è"5Change this instance-reference to a static reference.(÷ÁïÇ8êÜ™•¯/
+S
+java:S2209ç"5Change this instance-reference to a static reference.(ê 8êÜ™•¯/

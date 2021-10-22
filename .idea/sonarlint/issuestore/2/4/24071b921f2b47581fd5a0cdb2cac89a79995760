@@ -1,0 +1,18 @@
+
+o	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ú›ççşÿÿÿÿ8üĞªÈ/
+^
+java:S1126`"AReplace this if-then-else statement by a single return statement.(ÍºâÔ8Â‹ŠúÇ/
+u
+java:S3776¼"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(“®öÃşÿÿÿÿ8°ÁÑ È/
+`
+java:S2259”"BA "NullPointerException" could be thrown; "curB" is nullable here.(Ãë„à8½ÔÖœÈ/
+t
+java:S37769"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ùøÖ­øÿÿÿÿ8ûœßùÇ/
+{	java:S135Á"YReduce the total number of break and continue statements in this loop to use at most one.(ØÕ—©ıÿÿÿÿ8†»œ È/
+o	java:S101ü"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(“æ·´ÿÿÿÿÿ8Íş­œÈ/
+X
+java:S2094	"BRemove this empty class, write its code or make it an "interface".(Îœ‹™
+`
+java:S2259"BA "NullPointerException" could be thrown; "curA" is nullable here.(ëëÇÏ8”üÓœÈ/
+p
+java:S3776á"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(ÅÆúœ8„ê È/
