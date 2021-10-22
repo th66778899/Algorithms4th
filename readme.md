@@ -56,3 +56,18 @@ ssh -T git@github.com -i ~/.ssh/id_rsa_github
 
 
 dev分支测试
+
+建立新分支,需要 `git push -u origin dev` 将本地dev分支 与 远程分支建立流联系,需要在远程仓库创建对应的分支
+
+$ git push
+fatal: The current branch dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin dev
+
+
+
+dev 和 master分支 `git checkout master | git checkout dev `
+
+会导致对应分支下的文件发生覆盖问题
+
