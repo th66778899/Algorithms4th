@@ -425,31 +425,41 @@ class Solution617 {
 }
 class Solution450 {
     public TreeNode deleteNode(TreeNode root, int key) {
-        // 删除二叉树的节点分为几张情况
-        // 左右子树都为空
+        // 删除二叉树的节点分为几种情况
+        // 1.左右子树都为空
         // 直接返回null 作为根节点
-        // 左右有一侧为空
-        // 左右都不为空(找到右子树最左侧节点 , 将左子树root节点加到右子树最左侧节点的left)
+        // 2.3.左右有一侧为空
+        // 4.左右都不为空(找到右子树最左侧节点 , 将左子树root节点加到右子树最左侧节点的left)
+        // 当前节点值不为 key 需要递归查询左子树或者右子树
         if (root == null) return root;
         if (root.val == key){
-            if (root.left == null) {
+            // root.left == null
+            // 不管 right 如何 如果 right也为空, 直接返回右子树 null
+            // right 不为空 直接返回 right 右子树
+            // 包含了1. 2. 情况
+            if (root.left == null){
                 return root.right;
+                // 包含了 3.
             }else if (root.right == null){
                 return root.left;
             }else {
+                // 4.
+                // 左,右子树 都不为空
+                // 左右子树都为空
                 TreeNode cur = root.right;
                 while (cur.left != null){
                     cur = cur.left;
                 }
-                // 此时cur 指向右子树最左侧节点
-                cur.left  = root.left;
-                // 返回root节点的右子树
+                cur.left = root.left;
                 return root.right;
             }
         }
+        // 5.情况
+        // key 大于 当前节点的值
         if (root.val < key){
             root.right = deleteNode(root.right, key);
         }
+        // key 小于 当前节点的值
         if (root.val > key){
             root.left = deleteNode(root.left, key);
         }
