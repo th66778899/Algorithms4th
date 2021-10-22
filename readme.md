@@ -64,3 +64,13 @@ fatal: The current branch dev has no upstream branch.
 To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin dev
+<<<<<<< HEAD
+=======
+
+
+
+dev 和 master分支 `git checkout master | git checkout dev `
+
+会导致对应分支下的文件发生覆盖问题
+
+>>>>>>> dev
