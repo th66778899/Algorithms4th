@@ -1,0 +1,11 @@
+
+I
+java:S1264",Replace this "for" loop with a "while" loop.(¢ó¾ƒ8âÄ£êÇ/
+^
+java:S2094"BRemove this empty class, write its code or make it an "interface".(‹˜ÈT8âÄ£êÇ/
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8âÄ£êÇ/
+n	java:S101/"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ú›ççşÿÿÿÿ8âÄ£êÇ/
+c
+java:S1994&"AMove the update of "left","right" into this loop's update clause.(Ú”÷œÿÿÿÿÿ8âÄ£êÇ/
+o	java:S101•"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ô‹·èúÿÿÿÿ8É¤êÇ/

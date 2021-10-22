@@ -1,0 +1,28 @@
+
+L
+java:S3740."/Provide the parametrized type for this generic.(õÄ“Ú8ä¦Öç˜/
+8
+java:S36267"Remove this redundant jump.(ûÁİ…8ûÔäç˜/
+K
+java:S3740"/Provide the parametrized type for this generic.(¥ë¼(8ú’è˜/
+j	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(úêƒÿÿÿÿÿ8ú’è˜/
+Q
+java:S3740!"/Provide the parametrized type for this generic.(íï şûÿÿÿÿ8üœÓç˜/
+L
+java:S3740,"/Provide the parametrized type for this generic.(™™°8ä¦Öç˜/
+k
+java:S2272"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(‚ÑÑŞ8Ø°Şç˜/
+Q
+java:S3740"/Provide the parametrized type for this generic.(•ŠÈóúÿÿÿÿ8Æˆè˜/
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦³üëûÿÿÿÿ8Ø°Şç˜/
+e	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ã‘îÍ8üœÓç˜/
+\
+java:S1161":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ8Ø°Şç˜/
+_
+java:S1128"BRemove this unused import 'com.sun.org.apache.regexp.internal.RE'.(÷—•–8ûÔäç˜/
+K
+java:S1940")Use the opposite operator ("!=") instead.(•É²ƒıÿÿÿÿ8Æˆè˜/
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(÷—•–8ûÔäç˜/
+j	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(Çö’üÿÿÿÿ8Â²Üç˜/

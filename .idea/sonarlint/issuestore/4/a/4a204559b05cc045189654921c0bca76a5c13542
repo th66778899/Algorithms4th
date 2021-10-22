@@ -1,0 +1,22 @@
+
+C
+java:S1168"&Return an empty array instead of null.(¥¹ï8Ë¬¹Ç­/
+N
+java:S3599f",Use another way to initialize this instance.(¿øéùşÿÿÿÿ8Â°ªè­/
+I
+java:S1168"+Return an empty collection instead of null.(¥¹ï8ŞØ˜ğ­/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±—²8Ë¬¹Ç­/
+?
+java:S1659Ê"!Declare "cur" on a separate line.(Ç‰Ø±8ê‘ìó­/
+|
+java:S1171œ"YMove the contents of this initializer to a standard constructor or to field initializers.(¯¹«Üùÿÿÿÿ8ëÁûï­/
+H
+java:S1481b"&Remove this unused "x" local variable.(£š¶Õÿÿÿÿÿ8¸ğ¨è­/
+o
+java:S3981"RThe length of "strs" is always ">=0", so update this test to either "==0" or ">0".(ì ş8ŞØ˜ğ­/
+O
+java:S3599œ",Use another way to initialize this instance.(¯¹«Üùÿÿÿÿ8ëÁûï­/
+E
+java:S1481"(Remove this unused "str" local variable.(¸¬–î8òÁ‹È­/
+{
+java:S1171f"YMove the contents of this initializer to a standard constructor or to field initializers.(¿øéùşÿÿÿÿ8Â°ªè­/

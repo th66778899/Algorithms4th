@@ -1,0 +1,13 @@
+
+R
+java:S1128"5Remove this unused import 'sun.nio.cs.ext.MacArabic'.(“ìÕ8‚Éô±/
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(“ìÕ8‚Éô±/
+X
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ïËÉÙ
+k
+java:S1871ç"MThis branch's code block is the same as the block for the branch on line 356.(û›ªÃ8ÛÄŸş±/
+I
+java:S1144ö"+Remove this unused private "extend" method.(âƒú·8ó“Ÿş±/
+_
+java:S1126Ü"AReplace this if-then-else statement by a single return statement.(”Œ—8İ‚Îô±/

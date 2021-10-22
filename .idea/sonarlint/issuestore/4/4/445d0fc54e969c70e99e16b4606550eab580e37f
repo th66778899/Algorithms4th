@@ -1,0 +1,13 @@
+
+K
+java:S1125j")Remove the literal "false" boolean value.(¼Öµ›ûÿÿÿÿ8«Õ¯À¯/
+G
+java:S1125Ð")Remove the literal "false" boolean value.(½Û†•8™Ä¸×¯/
+G
+java:S1125‹")Remove the literal "false" boolean value.(½Û†•8‹ë¤Û¯/
+u
+java:S3776à"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(æ¯¤úüÿÿÿÿ8êÚ¥ß¯/
+|
+java:S2293Ï"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ¬öïÿÿÿÿÿ8¡ˆíß¯/
+F
+java:S1125î")Remove the literal "false" boolean value.(“†ä;8…‚þØ¯/

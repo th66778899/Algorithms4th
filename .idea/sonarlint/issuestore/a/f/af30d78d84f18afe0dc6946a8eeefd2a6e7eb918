@@ -1,0 +1,66 @@
+
+R
+java:S1128"5Remove this unused import 'sun.nio.cs.ext.MacArabic'.(“ìÕ8Û‚¯ÚÄ/
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(•Üˆö8ï¥™ÂÆ/
+E
+java:S1659ï""Declare "tail" on a separate line.(«ÀÜáıÿÿÿÿ8¡Ù”±Ä/
+u
+java:S3776 
+"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ùøÖ­øÿÿÿÿ8ûÆİÇÅ/
+z	java:S127“"XRefactor the code in order to not assign to this loop counter from within the loop body.(†÷ÄÀüÿÿÿÿ8ïİ¥œÆ/
+z	java:S127œ"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ü’šãøÿÿÿÿ8Å°¤õÅ/
+_
+java:S1126Ì
+"AReplace this if-then-else statement by a single return statement.(ÍºâÔ8ûÆİÇÅ/
+A
+java:S1659æ"#Declare "right" on a separate line.(çùà¶8¡Ù”±Ä/
+H
+java:S1481Ì	"*Remove this unused "right" local variable.(ÿæÍï8Ê–®Å/
+_
+java:S1126¿	"AReplace this if-then-else statement by a single return statement.(¹£½ƒ8Á™¨¦Å/
+d
+java:S2259O"BA "NullPointerException" could be thrown; "head" is nullable here.(Á³Š“úÿÿÿÿ8¡Ù”±Ä/
+F
+java:S1659å"#Declare "value" on a separate line.(ğ™”‹ÿÿÿÿÿ8¡Ù”±Ä/
+z	java:S127Á"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ü’šãøÿÿÿÿ8š€‚ñÅ/
+b
+java:S1128"@Remove this unused import 'java.lang.reflect.ParameterizedType'.(ÎÏ˜™ÿÿÿÿÿ8‰³ƒ…Ä/
+n
+java:S1128"QRemove this unused import 'com.sun.xml.internal.ws.addressing.WsaTubeHelperImpl'.(•Üˆö8ï¥™ÂÆ/
+u	java:S127Ø"XRefactor the code in order to not assign to this loop counter from within the loop body.(á°äÕ8üˆ£ÂÆ/
+z	java:S127”"XRefactor the code in order to not assign to this loop counter from within the loop body.(¾Üí›øÿÿÿÿ8üˆ£ÂÆ/
+z	java:S127¾"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ü’šãøÿÿÿÿ8«Œ…öÅ/
+G
+java:S1481É")Remove this unused "list" local variable.(åØ´Å8¡Ù”±Ä/
+=
+java:S1659¦"Declare "r" on a separate line.(Ã×–¯8ÓËò‚Å/
+z	java:S127‰"XRefactor the code in order to not assign to this loop counter from within the loop body.(¾¾¨˜ûÿÿÿÿ8×ÏƒõÅ/
+z	java:S127İ"XRefactor the code in order to not assign to this loop counter from within the loop body.(†÷ÄÀüÿÿÿÿ8ôíÜœÆ/
+e
+java:S2184"BCast one of the operands of this division operation to a "double".(÷†÷½úÿÿÿÿ8©æ†ÒÅ/
+|
+java:S3012µ"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ûÙÏşÿÿÿÿ8¡Ù”±Ä/
+Q
+java:S2864š"4Iterate over the "entrySet" instead of the "keySet".(Î¸¢[8èê×ÑÄ/
+H
+java:S1481á"*Remove this unused "index" local variable.(ÜŞøæ8Ö¹£Å/
+C
+java:S1172C"&Remove these unused method parameters.(ùşë‹8¡Ù”±Ä/
+Q
+java:S2864­"4Iterate over the "entrySet" instead of the "keySet".(Î¸¢[8Û‰ëÑÄ/
+>
+java:S1659" Declare "n1" on a separate line.(»Êíè8¡Ù”±Ä/
+z	java:S127Ş"XRefactor the code in order to not assign to this loop counter from within the loop body.(¾Üí›øÿÿÿÿ8üˆ£ÂÆ/
+u	java:S127¡"XRefactor the code in order to not assign to this loop counter from within the loop body.(—î×Ø8™ºéÒÅ/
+u	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(á°äÕ8üˆ£ÂÆ/
+U
+java:S3400E"9Remove this method and declare a constant for this value.(¡ğ¬8¡Ù”±Ä/
+N
+java:S1172ù"+Remove this unused method parameter "grid".(Úşüÿÿÿÿ8ØÂ”ÎÄ/
+z	java:S127ú"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ü’šãøÿÿÿÿ8š€‚ñÅ/
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(„½ÿÿÿÿÿ8¡Ù”±Ä/
+p
+java:S3776ÿ"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ï–õ8ÄŒèÑÄ/
+z	java:S127¸"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ü’šãøÿÿÿÿ8ŸºøÅ/

@@ -1,0 +1,15 @@
+
+{
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(·ìï«ÿÿÿÿÿ8¢ÈÉÉ¬/
+N
+java:S3599",Use another way to initialize this instance.(·ìï«ÿÿÿÿÿ8¢ÈÉÉ¬/
+t
+java:S3776/"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(“æÀüÿÿÿÿ8°Ş€Î¬/
+{
+java:S2293h"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥ûŠîøÿÿÿÿ8Â±À­/
+v
+java:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çƒ·8Â±À­/
+v
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(šñÈ8Â±À­/
+{
+java:S22931"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÁŠ¶»øÿÿÿÿ8Â±À­/

@@ -1,0 +1,23 @@
+
+e	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(öÍÈë8ÄšËÒ˜/
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦³üëûÿÿÿÿ8°ÉÒ˜/
+L
+java:S3740'"/Provide the parametrized type for this generic.(ş²Ñã8§„ÎÒ˜/
+K
+java:S3740-"/Provide the parametrized type for this generic.(È³ê8‚ªäÒ˜/
+k
+java:S2272"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(‚ÑÑŞ8Â’ÈÒ˜/
+K
+java:S3740-"/Provide the parametrized type for this generic.(È³ê8‚çâÒ˜/
+K
+java:S1940")Use the opposite operator ("!=") instead.(•É²ƒıÿÿÿÿ8½˜ıÒ˜/
+Q
+java:S37401"/Provide the parametrized type for this generic.(ø¸Ğèÿÿÿÿÿ8èœçÒ˜/
+\
+java:S1161":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ8°ÉÒ˜/
+Q
+java:S3740!"/Provide the parametrized type for this generic.(ì‚»‡ùÿÿÿÿ8Í„ÌÒ˜/
+j	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(¾¢ Ãøÿÿÿÿ8“¢ÅÒ˜/
+Q
+java:S3740"/Provide the parametrized type for this generic.(ø¸Ğèÿÿÿÿÿ8¥øşÒ˜/

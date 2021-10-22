@@ -1,0 +1,110 @@
+
+p	java:S100Ó
+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞùãÀûÿÿÿÿ8¼‡öœÆ/
+{
+java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(İø¦ªıÿÿÿÿ8„ãî¡²/
+z	java:S127£"XRefactor the code in order to not assign to this loop counter from within the loop body.(¼¸èÿúÿÿÿÿ8¼‡öœÆ/
+j	java:S101´"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ÿî¡ğ8¼‡öœÆ/
+o	java:S101õ"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(µÑê¥ıÿÿÿÿ8¼‡öœÆ/
+Z
+java:S2589´"7Remove this expression which always evaluates to "true"(è±ÿøÿÿÿÿ8¥¯›Ì²/
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ´¹åüÿÿÿÿ8Ö³½ ²/
+O
+java:S3599ú",Use another way to initialize this instance.(Ü«âûÿÿÿÿ8ÂÅæœÆ/
+B
+java:S2676ñ"Use the original value instead.(×ïªÿÿÿÿÿ8½‡öœÆ/
+j	java:S101‹"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(úæÈö8¼‡öœÆ/
+g	java:S116
+"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹¯‡t8ÕÙ» ²/
+o	java:S101İ"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ËÌõÂùÿÿÿÿ8¼‡öœÆ/
+E
+java:S16597"#Declare "right" on a separate line.(øÃ¹‰ùÿÿÿÿ8Â˜‹¡²/
+=
+java:S1659´"Declare "c" on a separate line.(®îŸÈ8¼‡öœÆ/
+o	java:S101‡
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(°ÔÑşÿÿÿÿ8¼‡öœÆ/
+F
+java:S1659ñ	"#Declare "right" on a separate line.(€ø›ñüÿÿÿÿ8¼‡öœÆ/
+o	java:S101í	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Éğ×…ùÿÿÿÿ8¼‡öœÆ/
+=
+java:S1659´"Declare "b" on a separate line.(®îŸÈ8¼‡öœÆ/
+i
+java:S1764¿"KCorrect one of the identical sub-expressions on both sides of operator "=="(æãÙÄ8òšÔ¬²/
+|
+java:S1171á"YMove the contents of this initializer to a standard constructor or to field initializers.(Ü«âûÿÿÿÿ8¼‡öœÆ/
+g	java:S116
+"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹¯‡t8ÕÙ» ²/
+u	java:S127É"XRefactor the code in order to not assign to this loop counter from within the loop body.(á°äÕ8›òôœÆ/
+O
+java:S3599á",Use another way to initialize this instance.(Ü«âûÿÿÿÿ8ÂÅæœÆ/
+o	java:S101Ê
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(àëÍ†şÿÿÿÿ8¼‡öœÆ/
+z	java:S127Î"XRefactor the code in order to not assign to this loop counter from within the loop body.(¾Üí›øÿÿÿÿ8¼‡öœÆ/
+|
+java:S1171ú"YMove the contents of this initializer to a standard constructor or to field initializers.(Ü«âûÿÿÿÿ8¼‡öœÆ/
+j	java:S101Œ"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÒˆÈ8«ƒğ¨²/
+j	java:S101»	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‚ŸĞÑ8¼‡öœÆ/
+j	java:S101¦
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ê‹¬8¼‡öœÆ/
+L
+java:S1125ƒ	")Remove the literal "false" boolean value.(ÖŒ†Úÿÿÿÿÿ8¼‡öœÆ/
+j	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­¸ÃÇ8¼‡öœÆ/
+|
+java:S1171É"YMove the contents of this initializer to a standard constructor or to field initializers.(Ü«âûÿÿÿÿ8¼‡öœÆ/
+F
+java:S1125×")Remove the literal "false" boolean value.(“†ä;8¼‡öœÆ/
+I
+java:S1481–"&Remove this unused "x" local variable.(¨Íœ¸ıÿÿÿÿ8½‡öœÆ/
+<
+java:S1659ˆ"Declare "b" on a separate line.(Ç…Äy8¥îæ±²/
+a
+java:S2583¿"CChange this condition so that it does not always evaluate to "true"(æãÙÄ8òšÔ¬²/
+;
+java:S1659
+"Declare "B" on a separate line.(¹¯‡t8ÕÙ» ²/
+j	java:S101•	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(èü¥—8¼‡öœÆ/
+j	java:S101‚"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(÷Ò¤ª8¼‡öœÆ/
+]
+java:S2094"BRemove this empty class, write its code or make it an "interface".(„½ÿÿÿÿÿ
+z	java:S127Í"XRefactor the code in order to not assign to this loop counter from within the loop body.(†÷ÄÀüÿÿÿÿ8¼‡öœÆ/
+F
+java:S1659á	"#Declare "right" on a separate line.(Ï¶ì„ûÿÿÿÿ8¼‡öœÆ/
+|
+java:S2293Ï
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(áª•†üÿÿÿÿ8¼‡öœÆ/
+f
+java:S2583’"CChange this condition so that it does not always evaluate to "true"(è±ÿøÿÿÿÿ8¼‡öœÆ/
+o	java:S101Ô"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ê„‡Íùÿÿÿÿ8£„Œ¯²/
+=
+java:S1659ì"Declare "y" on a separate line.(äÛÁ”8¼‡öœÆ/
+V
+java:S4973ç
+"9Use the "equals" method if value comparison was intended.(ïº­8¼‡öœÆ/
+j	java:S101Ã"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(³ùçÓ8¼‡öœÆ/
+a
+java:S2259†"CA "NullPointerException" could be thrown; "right" is nullable here.(ª“ì²8¼‡öœÆ/
+L
+java:S1125Ó")Remove the literal "false" boolean value.(¤†Èÿÿÿÿÿ8¼‡öœÆ/
+p	java:S100ã
+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì§Ö×şÿÿÿÿ8¼‡öœÆ/
+e
+java:S2259ú"BA "NullPointerException" could be thrown; "left" is nullable here.(ËÇ´€úÿÿÿÿ8Ú³İü²/
+k	java:S100Ú
+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëã°¦8¼‡öœÆ/
+a
+java:S2259ı"CA "NullPointerException" could be thrown; "right" is nullable here.(ª“ì²8¼‡öœÆ/
+D
+java:S1659ñ	"!Declare "sum" on a separate line.(€ø›ñüÿÿÿÿ8¼‡öœÆ/
+O
+java:S3599É",Use another way to initialize this instance.(Ü«âûÿÿÿÿ8ÂÅæœÆ/
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÊÊñ¾øÿÿÿÿ8Ö³½ ²/
+w
+java:S2293Î
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıÆÖñ8ÂÅæœÆ/
+u
+java:S3776Ç"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(½˜õıÿÿÿÿ8¼‡öœÆ/
+o	java:S101ô"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Çú®ÿÿÿÿÿ8¼‡öœÆ/
+|
+java:S2293ÿ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÖŠâ¯üÿÿÿÿ8¼‡öœÆ/

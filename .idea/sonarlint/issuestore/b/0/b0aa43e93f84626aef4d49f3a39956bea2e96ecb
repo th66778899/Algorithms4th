@@ -1,0 +1,16 @@
+
+u
+java:S3776Ú"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(“®öÃşÿÿÿÿ8òÌĞÆ/
+L
+java:S1066+"/Merge this if statement with the enclosing one.(®¯˜ù8³§ÃÆ/
+v	java:S135á"YReduce the total number of break and continue statements in this loop to use at most one.(Ááöµ8¨ÇŸĞÆ/
+p
+java:S3776ƒ"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ÅÆúœ8¾›”ÒÆ/
+{
+java:S2293>"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼Õ„Ìıÿÿÿÿ8¶¦•ÆÆ/
+]
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ş‰„øùÿÿÿÿ
+D
+java:S1168»"&Return an empty array instead of null.(¥¹ï8ûÿİËÆ/
+{
+java:S3012s"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÚĞŸøÿÿÿÿ8ò§µÉÆ/

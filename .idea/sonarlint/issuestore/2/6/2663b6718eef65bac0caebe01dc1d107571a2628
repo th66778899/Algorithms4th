@@ -1,0 +1,21 @@
+
+o
+java:S3776Q"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ª›Ô–8²¹ÙŒ®/
+b
+java:S1128"@Remove this unused import 'java.lang.reflect.ParameterizedType'.(ÎÏ˜™ÿÿÿÿÿ8†µó®/
+s
+java:S1104"QMake right a static final constant or non-public and provide accessors if needed.(ë™Ùµøÿÿÿÿ8‡ßÀ‹®/
+X
+java:S1128";Remove this unused import 'sun.reflect.generics.tree.Tree'.(ºğ“´8€·É‹®/
+l
+java:S1104"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏ8‡ßÀ‹®/
+m
+java:S1104"PMake left a static final constant or non-public and provide accessors if needed.(ŠËÌç8‡ßÀ‹®/
+Q
+java:S1481©"4Remove this unused "successorParent" local variable.(§Ò¿f8”Ì•®/
+d
+java:S2259µ"GA "NullPointerException" could be thrown; "successor" is nullable here.(§ıÕr8Æ•Ô®/
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(ºğ“´8€·É‹®/
+e
+java:S2259"GA "NullPointerException" could be thrown; "successor" is nullable here.(Şõ±õ8†µó®/

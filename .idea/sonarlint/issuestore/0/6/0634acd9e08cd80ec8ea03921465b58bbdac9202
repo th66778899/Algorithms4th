@@ -1,0 +1,23 @@
+
+d
+java:S1126È"AReplace this if-then-else statement by a single return statement.(×ú‡úÿÿÿÿ8Õ”çÒª/
+T
+java:S1128"7Remove this unused import 'org.junit.jupiter.api.Test'.(Öºˆß8¹Ôû±¨/
+s	java:S117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã˜¾åûÿÿÿÿ8×Ôõ©/
+t	java:S127."XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ8ô³²¨/
+=
+java:S1659ø"Declare "r" on a separate line.(Ã×–¯8õŸ¯Ğ©/
+u
+java:S3776ë"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(âß”ßùÿÿÿÿ8€”Àõ©/
+D
+java:S1481Ş"&Remove this unused "i" local variable.(»ŸÜš8¥ÆçÒª/
+V
+java:S3400^"9Remove this method and declare a constant for this value.(È¸å8±‰ü±¨/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ááÂÔ
+C
+java:S1172]"&Remove these unused method parameters.(©Ñ‹ã8±‰ü±¨/
+Q
+java:S1128"4Remove this unused import 'java.lang.reflect.Array'.(‡¡É˜8¢ñÊ­¨/
+j	java:S101ê"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(†Òâô8£Ê÷ó©/
+A
+java:S1659"Declare "r" on a separate line.(´€¿éşÿÿÿÿ8ÃÔ˜¨/
