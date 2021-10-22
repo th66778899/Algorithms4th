@@ -51,3 +51,16 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa_github -C "2391415158@qq.com"
 
 ssh -T git@github.com -i ~/.ssh/id_rsa_github
 
+
+
+
+
+dev分支测试
+
+# 建立新分支,需要 `git push -u origin dev` 将本地dev分支 与 远程分支建立流联系,需要在远程仓库创建对应的分支
+
+$ git push
+fatal: The current branch dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin dev
