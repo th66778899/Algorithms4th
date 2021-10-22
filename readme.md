@@ -22,3 +22,32 @@ git remote add origin git@github.com:th66778899/Algorithms4th.git
 之后再进行 `git add . git push -m '' git push -u origin master ` 没有问题,成功上传项目到github
 
 具体原因之后还需要再学习git使用
+
+
+
+
+
+ssh默认不支持rsa了  https://silenwang.github.io/2021/10/11/ssh默认不支持rsa了/
+
+
+
+配置多个git账号 : https://blog.csdn.net/q13554515812/article/details/83506172
+
+
+
+gradle使用
+
+
+
+git基本使用  https://zhuanlan.zhihu.com/p/30044692
+
+
+
+ssh-keygen -t rsa -C "2391415158@qq.com"
+
+ssh-keygen -t rsa -f ~/.ssh/id_rsa_github -C "2391415158@qq.com"
+
+
+
+ssh -T git@github.com -i ~/.ssh/id_rsa_github
+
