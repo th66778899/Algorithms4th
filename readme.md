@@ -76,12 +76,6 @@ dev 和 master分支 `git checkout master | git checkout dev `
 
 
 
-dev分支测试数据
+master分支和 dev 分支  merge 问题
 
-
-fenzhi1测试数据
-<<<<<<< HEAD
-
-=======
-fenzhi1xxxxxx
->>>>>>> fenzhi1
+同一个文件 两分支内容不一致,先后更改
