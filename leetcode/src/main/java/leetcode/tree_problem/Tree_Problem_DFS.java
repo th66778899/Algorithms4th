@@ -423,3 +423,36 @@ class Solution617 {
         return root1;
     }
 }
+class Solution450 {
+    public TreeNode deleteNode(TreeNode root, int key) {
+        // 删除二叉树的节点分为几张情况
+        // 左右子树都为空
+        // 直接返回null 作为根节点
+        // 左右有一侧为空
+        // 左右都不为空(找到右子树最左侧节点 , 将左子树root节点加到右子树最左侧节点的left)
+        if (root == null) return root;
+        if (root.val == key){
+            if (root.left == null) {
+                return root.right;
+            }else if (root.right == null){
+                return root.left;
+            }else {
+                TreeNode cur = root.right;
+                while (cur.left != null){
+                    cur = cur.left;
+                }
+                // 此时cur 指向右子树最左侧节点
+                cur.left  = root.left;
+                // 返回root节点的右子树
+                return root.right;
+            }
+        }
+        if (root.val < key){
+            root.right = deleteNode(root.right, key);
+        }
+        if (root.val > key){
+            root.left = deleteNode(root.left, key);
+        }
+        return root;
+    }
+}
