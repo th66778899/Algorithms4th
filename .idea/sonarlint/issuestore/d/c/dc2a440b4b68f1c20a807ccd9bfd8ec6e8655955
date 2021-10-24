@@ -1,26 +1,26 @@
 
 n	java:S117Î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÛÀ¼8Î›åÈ/
-s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âı¡óûÿÿÿÿ8Ù¥­æÈ/
+n
+java:S1104…"PMake left a static final constant or non-public and provide accessors if needed.(ÓÙÅ§8Ù¥­æÈ/
+t
+java:S1104†"QMake right a static final constant or non-public and provide accessors if needed.(²ä†ëÿÿÿÿÿ8Ù¥­æÈ/
+Z
+java:S2589²"7Remove this expression which always evaluates to "true"(ª¡¿Üıÿÿÿÿ8øÄ³‘É/
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ô¬‰¼üÿÿÿÿ
+n	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÄÍê8Ù¥­æÈ/
 s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âı¡óûÿÿÿÿ8Ù¥­æÈ/
 m
+java:S1104‡"PMake next a static final constant or non-public and provide accessors if needed.(²®ˆ8Ù¥­æÈ/
+]
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ô¬‰¼üÿÿÿÿ
+s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âı¡óûÿÿÿÿ8Ù¥­æÈ/
+m
+java:S1104É"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏ8Î›åÈ/
+m
 java:S1104„"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏ8Ù¥­æÈ/
+s	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÜçÆüÿÿÿÿ8Î›åÈ/
 s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âı¡óûÿÿÿÿ8Ù¥­æÈ/
 r
 java:S1104Ê"TMake children a static final constant or non-public and provide accessors if needed.(ş“îÍ8Î›åÈ/
+s	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÜçÆüÿÿÿÿ8Î›åÈ/
 s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âı¡óûÿÿÿÿ8Ù¥­æÈ/
-s	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÜçÆüÿÿÿÿ8Î›åÈ/
-m
-java:S1104‡"PMake next a static final constant or non-public and provide accessors if needed.(²®ˆ8Ù¥­æÈ/
-t
-java:S1104†"QMake right a static final constant or non-public and provide accessors if needed.(²ä†ëÿÿÿÿÿ8Ù¥­æÈ/
-n
-java:S1104…"PMake left a static final constant or non-public and provide accessors if needed.(ÓÙÅ§8Ù¥­æÈ/
-s	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÜçÆüÿÿÿÿ8Î›åÈ/
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ô¬‰¼üÿÿÿÿ
-m
-java:S1104É"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏ8Î›åÈ/
-Z
-java:S2589²"7Remove this expression which always evaluates to "true"(ª¡¿Üıÿÿÿÿ8øÄ³‘É/
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ô¬‰¼üÿÿÿÿ
-n	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÄÍê8Ù¥­æÈ/

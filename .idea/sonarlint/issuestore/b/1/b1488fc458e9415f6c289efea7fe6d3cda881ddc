@@ -5,6 +5,6 @@ X
 java:S2094"BRemove this empty class, write its code or make it an "interface".(â Õ€
 U
 java:S2589¦"7Remove this expression which always evaluates to "true"(¬ƒÑ´8ÉßíäÉ/
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(â Õ€
 M
 java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8“ÔŒâÉ/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(â Õ€

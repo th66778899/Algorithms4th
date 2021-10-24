@@ -1,12 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æ–·Èþÿÿÿÿ
-E
-java:S1128"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø
-k
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¯¹ýŠûÿÿÿÿ
-f
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ˆÔ·ì
-h
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘
-2
-java:S1116"Remove this empty statement.(ºõœ·

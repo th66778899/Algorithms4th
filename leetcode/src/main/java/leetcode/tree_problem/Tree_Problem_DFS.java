@@ -466,3 +466,100 @@ class Solution450 {
         return root;
     }
 }
+
+class Solution669 {
+    // 迭代
+    // 利用二叉搜索树的性质,该节点左子树 >= low 其右子树 肯定 > low , 不需要再考虑右子树 < low 的情况
+    // 该节点右子树 > high 其左子树肯定不会再 > high
+    public TreeNode trimBST(TreeNode root, int low, int high) {
+        if (root == null) return root;
+        // root节点不满足条件
+        while (root != null && (root.val < low || root.val > high)){
+            if (root.val < low){
+                root = root.right;
+            }
+            if (root.val > high){
+                root = root.left;
+            }
+        }
+        // root节点已满足条件
+        // 处理root左子树
+        TreeNode cur = root;
+        while (cur != null){
+            while (cur.left != null && cur.left.val < low){
+                cur.left = cur.left.right;
+            }
+            cur = cur.left;
+        }
+        cur = root;
+        while (cur != null) {
+            while (cur.right != null && cur.right.val > high) {
+                cur.right = cur.right.left;
+            }
+            cur = cur.right;
+        }
+        return root;
+    }
+
+    // 递归
+    /*public TreeNode trimBST(TreeNode root, int low, int high) {
+        // 根据二叉搜索树的性质
+        // root.val < low 该节点左子树都不符合规定的要求
+        // root.val > right 该节点右子树都不符合要求
+        if (root == null) return root;
+        while (root != null){
+            if (root.val > high){
+                // 右子树都不符合
+                TreeNode left = trimBST(root.left, low, high);
+                return left;
+            }
+            if (root.val < low){
+                // 左子树都不符合
+                TreeNode right = trimBST(root.right, low, high);
+                return right;
+            }
+        }
+        root.left = trimBST(root.left, low, high);
+        root.right = trimBST(root.right, low, high);
+        return root;
+
+    }*/
+
+}
+class Solution108 {
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return buildBst(nums,0, nums.length - 1);
+    }
+    // 循环不变量 [left, right]
+    private TreeNode buildBst(int[] nums,int left, int right){
+        if (left > right){
+            return null;
+        }
+        int mid = left + (right - left) / 2;
+        TreeNode root = new TreeNode(nums[mid]);
+        root.left = buildBst(nums, left ,mid - 1);
+        root.right = buildBst(nums, mid + 1, right);
+        return root;
+
+    }
+}
+class Solution538 {
+    public TreeNode convertBST(TreeNode root) {
+        if (root == null) return root;
+        // 右 中 左
+        convertBST(root.right);
+        TreeNode cur = root.right;
+        while (cur != null && cur.left != null){
+            cur = cur.left;
+        }
+
+        if (root.right != null){
+            root.val += cur.val;
+        }
+        if (root.left  != null){
+            root.left.val += root.val;
+        }
+        convertBST(root.left);
+        return root;
+    }
+}
