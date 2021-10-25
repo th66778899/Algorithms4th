@@ -62,6 +62,8 @@ class Solution107 {
 class Solution199 {
     public List<Integer> rightSideView(TreeNode root) {
         ArrayList<Integer> res = new ArrayList<>();
+        int x;
         return res;
+
     }
 }
