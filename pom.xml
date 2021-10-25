@@ -13,6 +13,7 @@
         <module>sort</module>
         <module>datastructure</module>
         <module>leetcode</module>
+        <module>tree</module>
     </modules>
     <dependencies>
         <dependency>
