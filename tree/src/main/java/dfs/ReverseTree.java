@@ -1,10 +1,7 @@
 package dfs;
 
 
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @Author tho
@@ -58,14 +55,20 @@ class Solution590 {
     public List<Integer> postorder(Node root) {
         ArrayList<Integer> res = new ArrayList<>();
         if (root == null) return res;
-        post(root, res);
+        Deque<Node> stack = new LinkedList<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            Node node = stack.pop();
+            List<Node> children = node.children;
+            for (Node child : children) {
+                if (child != null) {
+                    stack.push(child);
+                }
+            }
+            res.add(node.val);
+        }
+        Collections.reverse(res);
         return res;
     }
-    private void post(Node root,List<Integer> res) {
-        if (root == null) return;
-        for (Node child : root.children) {
-            post(child, res);
-        }
-        res.add(root.val);
-    }
+
 }
