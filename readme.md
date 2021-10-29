@@ -91,3 +91,44 @@ https://www.jianshu.com/p/2bb87ae49ff6
 
 
 
+
+
+// 递归时int类型传参问题
+
+[513. 找树左下角的值 - 力扣（LeetCode） (leetcode-cn.com)](https://leetcode-cn.com/problems/find-bottom-left-tree-value/)
+
+```java
+class Solution {
+    int maxHeight;
+    int res;
+    public int findBottomLeftValue(TreeNode root) {
+        // 树左下角的值
+        // 最底层  借助高度来找到
+        // 左下角,只记录
+        maxHeight = 0;
+        res = root.val;
+        dfs(root, 1);
+        return res;
+    }
+    private void dfs(TreeNode root, int height) {
+        if (root == null) return;
+        // 高度变大了 且左子树不为空,更新数值
+        if ( height > maxHeight) {
+            res = root.val;
+            maxHeight = height;
+        }
+        // 左
+        height++;
+        dfs(root.left, height);
+        dfs(root.right, height);
+        /**
+        dfs(root.left, height++);
+        dfs(root.right, height++);
+        这样写是错的
+        **/
+    }
+}
+```
+
+
+

@@ -1,6 +1,8 @@
 package dfs;
 
 
+import com.sun.org.apache.regexp.internal.RE;
+
 import java.util.*;
 
 /**
@@ -168,21 +170,185 @@ class Solution111_dfs{
 
     public int minDepth(TreeNode root) {
         if (root == null) return 0;
-        return dfs(root, 1);
+        return dfs(root);
     }
-    private int dfs(TreeNode root, int depth) {
-        if (root.left == null && root.right == null) {
-            return depth;
+    private int dfs(TreeNode root) {
+        if (root == null) return 0;
+        int leftDepth = dfs(root.left);
+        int rightDepth = dfs(root.right);
+        if (root.left == null && root.right != null) {
+            return 1 + rightDepth;
         }
-        depth++;
-        int left = 0;
-        int right = 0;
+        if (root.left != null && root.right == null) {
+            return 1+ leftDepth;
+        }
+        // 已经排除了 左右有一侧树为空的情况
+        // 还剩两种情况,左右都为空 左右都不是空,这两种情况可以合并处理
+        // 都是左右子树深度最小值 + 1
+        return Math.min(leftDepth, rightDepth) + 1;
+    }
+}
+class Solution222 {
+
+    public int countNodes(TreeNode root) {
+
+        if (root == null) return 0;
+
+        return dfs(root);
+    }
+    private int dfs(TreeNode root) {
+        // 利用完全二叉树的性质
+        // 完全二叉树节点个数 : 2^深度 - 1
+        // 通过判断左右子树的深度来判断是不是一个完全二叉树
+        // 一直向左子树方向移动指针,求左子树深度
+        // 一直向右子树移动指针,求右子树深度
+        // 左右子树深度一致,说明这是一个完全二叉树,可以求节点数
+        // 不一致,递归左右子树,找到一个完全二叉树
+        TreeNode left = root.left;
+        TreeNode right = root.right;
+        int leftDepth = 0;
+        int rightDepth = 0;
+        while (left != null) {
+            left = left.left;
+            leftDepth++;
+        }
+        while (right != null) {
+            right = right.right;
+            rightDepth++;
+        }
+        if (leftDepth == rightDepth) {
+            return (leftDepth << 1) - 1;
+        }
+        return dfs(root.left) + dfs(root.right);
+
+    }
+}
+class Solution210 {
+    public boolean isBalanced(TreeNode root) {
+        if (root == null) return true;
+        TreeNode left = root.left;
+        TreeNode right = root.right;
+        int leftDepth = 0;
+        int rightDepth = 0;
+        while (left != null) {
+            left = left.left;
+            leftDepth++;
+        }
+        while (right != null) {
+            right = right.right;
+            rightDepth++;
+        }
+        if (Math.abs(leftDepth - rightDepth) > 1) {
+            return false;
+        }
+        return isBalanced(root.left) && isBalanced(root.right);
+    }
+}
+class Solution110 {
+    public boolean isBalanced(TreeNode root) {
+        // 二叉树高度 该节点到叶子节点路径长度  可以使用后序遍历
+        // 二叉树深度 该节点到根节点路径长度    可以使用前序遍历
+        if (dfs(root) == -1) {
+            return false;
+        }else {
+            return true;
+        }
+
+    }
+    private int dfs(TreeNode root) {
+        // 根据二叉树高度来判断是不是一个平衡二叉树
+        // 如果二叉树不满足平衡二叉树,返回 -1 , 否则返回当前树的高度
+        if (root == null) return 0;
+        int leftHeight = dfs(root.left);
+        if (leftHeight == -1) return -1;
+        int rightHeight = dfs(root.right);
+        if (rightHeight == -1) return -1;
+        if (Math.abs(leftHeight - rightHeight) > 1) {
+            return -1;
+        }else {
+            return Math.max(leftHeight, rightHeight) + 1;
+        }
+
+    }
+}
+class Solution257 {
+    public List<String> binaryTreePaths(TreeNode root) {
+        ArrayList<String> res = new ArrayList<>();
+        if (root == null) return res;
+        ArrayList<Integer> path = new ArrayList<>();
+        dfs(root, res, path);
+
+        return res;
+    }
+    private void dfs(TreeNode root, List<String> res, List<Integer> path){
+
+
+        if (root.left == null && root.right == null) {
+            // 到达叶子节点,记录结果
+            StringBuilder sb = new StringBuilder();
+            int length = path.size();
+            for (int i = 0; i < length - 1; i++) {
+                sb.append(path.get(i)).append("->");
+            }
+            sb.append(path.get(length - 1));
+            res.add(sb.toString());
+
+        }
+        // 前序遍历 中左右
+        // 中
+
         if (root.left != null) {
-            left = dfs(root.left, depth);
+            // 遍历左子树
+            path.add(root.val);
+            dfs(root.left, res, path);
+            path.remove(path.size() - 1);
         }
         if (root.right != null) {
-            right = dfs(root.right, depth);
+            // 遍历右子树
+            path.add(root.val);
+            dfs(root.right, res, path);
+            path.remove(path.size() - 1);
         }
-        return Math.min(left, right);
+    }
+}
+class Solution100 {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p == null && q == null) {
+            return true;
+        }else if (p == null) {
+            return false;
+        }else if (q == null) {
+            return false;
+        }else if (p.val != q.val) {
+            return false;
+        }
+        // 还剩一种情况,左右子树相等情况
+        boolean left = isSameTree(p.left, q.left);
+        boolean right = isSameTree(p.right, q.right);
+        return left && right;
+    }
+}
+class Solution {
+    public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+        if (check(root, subRoot)) {
+            return true;
+        }
+        boolean left = check(root.left, subRoot);
+        boolean right = check(root.right, subRoot);
+        return left || right;
+    }
+    private boolean check(TreeNode p, TreeNode q) {
+        if (p == null && q == null) {
+            return true;
+        }else if (p == null) {
+            return false;
+        }else if (q == null) {
+            return false;
+        }else if (p.val != q.val) {
+            return false;
+        }
+        boolean left = check(p.left, q.left);
+        boolean right = check(p.right, q.right);
+        return left && right;
     }
 }
