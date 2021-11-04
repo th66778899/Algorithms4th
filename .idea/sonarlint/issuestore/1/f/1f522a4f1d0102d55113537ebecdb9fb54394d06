@@ -1,16 +1,16 @@
 
 p
 java:S3776Ú"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(æ¯Óš8×çØØÊ/
-i	java:S1017"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ß·²ô8ÿÕ˜É/
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(³æâ´
-c
-java:S1126t"AReplace this if-then-else statement by a single return statement.(œ‹üüÿÿÿÿ8¢ûç³É/
-¥
-java:S2681£"†This line will not be executed conditionally; only the first line of this 3-line block will be. The rest will execute unconditionally.(ì‚†8®¯£ÜÉ/
 i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(İùòä8Ñõ‰–É/
 _
 java:S2259­"AA "NullPointerException" could be thrown; "cur" is nullable here.(ÌôÙ8ÜØÜÊ/
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(³æâ´
+¥
+java:S2681£"†This line will not be executed conditionally; only the first line of this 3-line block will be. The rest will execute unconditionally.(ì‚†8®¯£ÜÉ/
+c
+java:S1126t"AReplace this if-then-else statement by a single return statement.(œ‹üüÿÿÿÿ8¢ûç³É/
+i	java:S1017"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ß·²ô8ÿÕ˜É/
 8
 java:S3626"Remove this redundant jump.(ûÁİ…8À›˜É/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(³æâ´
+X
+java:S2094"BRemove this empty class, write its code or make it an "interface".(³æâ´

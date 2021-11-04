@@ -163,4 +163,121 @@ class Solution654 {
         return root;
     }
 }
+class Solution98 {
+    TreeNode pre;
+    public boolean isValidBST(TreeNode root) {
+        if (root == null) return true;
+        // 中序遍历
+        boolean left = isValidBST(root.left);
+        if (pre != null && pre.val >= root.val) {
+                return false;
+        }
+        pre = root;
+        boolean right =  isValidBST(root.right);
+        return left && right;
+    }
 
+    public static void main(String[] args) {
+        TreeNode treeNode = ArrToTreeUtils.InitTree(new Integer[]{5, 1, 4, null, null, 3, 6});
+        new Solution98().isValidBST(treeNode);
+    }
+}
+class Solution530 {
+    int min;
+    TreeNode pre;
+    public int getMinimumDifference(TreeNode root) {
+        min = Integer.MAX_VALUE;
+        dfs(root);
+        return min;
+    }
+    private void dfs(TreeNode root) {
+        // 中序遍历
+        if (root == null) return;
+        dfs(root.left);
+        if (pre != null) {
+            min = root.val - pre.val  < min ? root.val - pre.val : min;
+
+        }
+        pre = root;
+        dfs(root.right);
+    }
+}
+class Solution501 {
+    int count;
+    int max;
+    ArrayList<Integer> res;
+    TreeNode pre;
+    public int[] findMode(TreeNode root) {
+        res = new ArrayList<>();
+        count = 1;
+        max = 1;
+        dfs(root);
+        int[] ints = new int[res.size()];
+        int index = 0;
+        while (index < res.size()) {
+            ints[index] = res.get(index);
+            index++;
+        }
+        return ints;
+    }
+    private void dfs(TreeNode root) {
+        if (root == null) return;
+        dfs(root.left);
+        if (pre != null) {
+            if (pre.val == root.val) {
+                count++;
+                if (count > max) {
+                    max = count;
+                    res.clear();
+
+                }
+            }else {
+                count = 1;
+            }
+        }
+        if (count == max) {
+            res.add(root.val);
+        }
+        pre = root;
+        dfs(root.right);
+    }
+
+    // 在一个有序数组中一次遍历O(1) 空间复杂度 找出众数
+    /*public static void main(String[] args) {
+        int[] ints = {1, 1, 2, 3, 5, 5, 5, 6};
+        int num = ints[0];
+        int count = 1;
+        int max = 1;
+        int pre = ints[0];
+        for (int i = 1; i < ints.length; i++) {
+            if (pre == ints[i]) {
+                count++;
+                if (count > max) {
+                    num = ints[i];
+                    max = count;
+                }
+            }else {
+                count = 1;
+            }
+            pre = ints[i];
+        }
+        System.out.println(num);
+    }*/
+}
+class Solution236 {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+       return dfs(root, p, q);
+    }
+    private TreeNode dfs(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == p || root == q || root == null) return root;
+        TreeNode left = dfs(root.left, p, q);
+        TreeNode right = dfs(root.right, p, q);
+        if (left != null && right != null) {
+            return root;
+        }else if (left == null && right != null) {
+            return right;
+        }else {
+            return left;
+        }
+    }
+}
