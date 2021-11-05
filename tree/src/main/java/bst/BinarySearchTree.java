@@ -87,3 +87,104 @@ class Solution700 {
         }
     }*/
 }
+class Solution701 {
+    public TreeNode insertIntoBST(TreeNode root, int val) {
+        if (root == null) return new TreeNode(val);
+        if (val < root.val) {
+            root.left = insertIntoBST(root.left, val);
+        }else if (val > root.val) {
+            root.right = insertIntoBST(root.right, val);
+        }
+        return root;
+    }
+}
+class Solution450 {
+    public TreeNode deleteNode(TreeNode root, int key) {
+        if (root == null) return root;
+        if (root.val < key) {
+            root.right = deleteNode(root.right, key);
+        }else if (root.val > key) {
+            root.left = deleteNode(root.left, key);
+        }else {
+            // 找到了目标值
+            // 分为几种情况
+            if (root.left == null && root.right == null) {
+                return null;
+            }else if (root.left == null) {
+                return root.right;
+            }else if (root.right == null) {
+                return root.left;
+            }else {
+                // 左右子树都不为空
+                TreeNode temp = root.right;
+                while (temp != null && temp.left != null) {
+                    temp = temp.left;
+                }
+                temp.left = root.left;
+                return root.right;
+            }
+        }
+
+        return root;
+
+    }
+
+    public static void main(String[] args) {
+
+        TreeNode treeNode = ArrToTreeUtils.InitTree(new Integer[]{5, 3, 6, 2, 4, null, 7});
+        TreeNode treeNode1 = new Solution450().deleteNode(treeNode, 3);
+        System.out.println(treeNode1.val);
+    }
+}
+class Solution669 {
+    public TreeNode trimBST(TreeNode root, int low, int high) {
+        if (root == null) return root;
+        if (root.val < low) {
+            TreeNode right = trimBST(root.right, low, high);
+            return right;
+        }
+        if (root.val > high) {
+            TreeNode left = trimBST(root.left, low, high);
+            return left;
+        }
+        root.left = trimBST(root.left, low, high);
+        root.right = trimBST(root.right, low, high);
+        return root;
+    }
+}
+class Solution108 {
+    // 循环不变量 [left, right)
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return buildTree(nums, 0, nums.length);
+    }
+    private TreeNode buildTree(int[] nums, int left, int right) {
+        if (left >= right) return null;
+        if (right - left == 1) {
+            return new TreeNode(nums[left]);
+        }
+        int mid = left + (right - left) / 2;
+        TreeNode root = new TreeNode(nums[mid]);
+        root.left = buildTree(nums, left, mid);
+        root.right = buildTree(nums, mid + 1, right);
+        return root;
+    }
+}
+class Solution538 {
+    TreeNode pre;
+    public TreeNode convertBST(TreeNode root) {
+        // 累加树 二叉搜索树 中序遍历 左中右 递增序列
+        // 右 中 左 遍历,该节点的值加上前面一个节点的值
+        dfs(root);
+        return root;
+
+    }
+    private void dfs(TreeNode root) {
+        if (root == null) return;
+        dfs(root.right);
+        if (pre != null) {
+            root.val += pre.val;
+        }
+        pre = root;
+        dfs(root.left);
+    }
+}

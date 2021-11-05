@@ -265,19 +265,63 @@ class Solution501 {
     }*/
 }
 class Solution236 {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-       return dfs(root, p, q);
-    }
-    private TreeNode dfs(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == p || root == q || root == null) return root;
-        TreeNode left = dfs(root.left, p, q);
-        TreeNode right = dfs(root.right, p, q);
-        if (left != null && right != null) {
-            return root;
-        }else if (left == null && right != null) {
-            return right;
-        }else {
-            return left;
+    class Solution {
+        public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+            return dfs(root, p, q);
+        }
+        private TreeNode dfs(TreeNode root, TreeNode p, TreeNode q) {
+            if (root == p || root == q || root == null) {
+                return root;
+            }
+            TreeNode left = dfs(root.left, p ,q);
+            TreeNode right = dfs(root.right, p, q);
+            if (left != null && right != null) {
+                return root;
+            }else if (root == null && right != null) {
+                return right;
+            }else {
+                return left;
+            }
         }
     }
+}
+class Solution235 {
+
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        while(root != null) {
+            if (root.val > p.val && root.val > q.val) {
+                root = root.left;
+            }else if (root.val < p.val && root.val < q.val) {
+                root = root.right;
+            }else return root;
+        }
+        return null;
+    }
+    // 递归
+    /*public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        // 利用二叉搜索树,将p,q两个节点看做一个区间,p,q 两点的公共祖先肯定在两节点中间
+        return dfs(root, p, q);
+    }
+    private TreeNode dfs(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == p || root == q || root == null) {
+            return root;
+        }
+        // 中序遍历
+
+        if (root.val < p.val && root.val < q.val) {
+            TreeNode right = dfs(root.right, p, q);
+             if (right != null) {
+                 return right;
+             }
+        }else if (root.val > p.val && root.val > q.val) {
+            TreeNode  left = dfs(root.left, p, q);
+             if (left != null) {
+                 return left;
+             }
+        }
+        return root;
+
+
+
+    }*/
 }
