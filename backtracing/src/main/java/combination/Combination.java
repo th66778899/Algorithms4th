@@ -19,22 +19,22 @@ class Solution77 {
     public List<List<Integer>> combine(int n, int k) {
         res = new ArrayList<>();
         list = new ArrayList<>();
-        backTracking(1, n + 1, k);
+        backTracking(1, n, k);
         return res;
-
     }
+
     private void backTracking(int start, int end, int k) {
         if (list.size() == k) {
             res.add(new ArrayList<>(list));
             return;
         }
-        // 剪枝
-        for (int i = start; i < end - (k - list.size()) + 1; i++) {
+        // k - list.size() 表示还需要的元素个数 i + k - list.size() 表示i至多由这个位置开始
+        // i = 3 k = 2 end = 4 要满足 1 2 3 4 四个数找两个 可以由3开始,即为下面的判断条件
+        for (int i = start; i + (k - list.size()) <= end + 1; i++) {
             list.add(i);
             backTracking(i + 1, end, k);
             list.remove(list.size() - 1);
         }
-
     }
 }
 class Solution216 {
