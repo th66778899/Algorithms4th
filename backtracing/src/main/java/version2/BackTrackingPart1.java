@@ -11,7 +11,7 @@ import java.util.List;
  * @ClassName: BackTracking
  * @Description: 回溯
  */
-public class BackTracking {
+public class BackTrackingPart1 {
 }
 class Solution77 {
     List<List<Integer>> res;
@@ -154,6 +154,124 @@ class Solution40 {
             used[i] = true;
             backTracking(candidates, target, sum + candidates[i], i + 1);
             used[i] = false;
+            path.remove(path.size() - 1);
+        }
+    }
+}
+class Solution131 {
+    List<List<String>> res;
+    List<String> path;
+
+    public List<List<String>> partition(String s) {
+        res = new ArrayList<>();
+        path = new ArrayList<>();
+
+        backTracking(s, 0);
+        return res;
+    }
+    private void backTracking(String str, int start) {
+        if (start >= str.length()) {
+            res.add(new ArrayList<>(path));
+            return;
+        }
+        for (int i = start; i < str.length(); i++) {
+            String substring = str.substring(start, i + 1);
+            if (check(substring)) {
+
+                path.add(substring);
+                backTracking(str, i + 1);
+                path.remove(path.size() - 1);
+
+            }
+        }
+    }
+    private boolean check(String str) {
+        char[] chars = str.toCharArray();
+        for (int i = 0; i < chars.length / 2; i++) {
+            if (chars[i] != chars[chars.length - i -1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+class Solution93 {
+    List<String> res;
+    StringBuilder sb;
+    public List<String> restoreIpAddresses(String s) {
+        res = new ArrayList<>();
+        sb = new StringBuilder();
+        backTracking(s, 0, 0);
+        return res;
+    }
+    private void backTracking(String str, int start, int num) {
+        if (num == 3) {
+            if (check(str, start, str.length())) {
+                sb.append(str.substring(start, str.length()));
+                res.add(sb.toString());
+            }
+            return;
+        }
+        if (num > 3) {
+            return;
+        }
+        for (int i = start; i < str.length(); i++) {
+            String substring = str.substring(i, i + 1);
+            if (check(str, start, i + 1)) {
+                sb.append(substring);
+                sb.append(".");
+                num = num + 1;
+                backTracking(str, i + 1, num);
+                num = num - 1;
+                int index = sb.lastIndexOf(".");
+                sb.delete(index, sb.length());
+            } else {
+                break;
+            }
+        }
+    }
+    private boolean check(String str, int start, int end) {
+        if (start >= end) {
+            return false;
+        }
+        if (str.charAt(start) == '0' && start < end) {
+            return false;
+        }
+        int sum = 0;
+        for (int i = start; i < end; i++) {
+            if (str.charAt(i) > '9' || str.charAt(i) < '0') {
+                return false;
+            }
+
+
+            sum *= 10;
+            sum += str.charAt(i) - '0';
+            if (sum > 255) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+         new Solution93().restoreIpAddresses("25525511135");
+//        System.out.println(new Solution93().check("25525511135", 0, 6));
+    }
+}
+class Solution78 {
+    List<List<Integer>> res;
+    List<Integer> path;
+    public List<List<Integer>> subsets(int[] nums) {
+        res = new ArrayList<>();
+        path = new ArrayList<>();
+        backTracking(nums, 0);
+        return res;
+    }
+    private void backTracking(int[] nums, int start) {
+        res.add(new ArrayList<>(path));
+        for (int i = start; i < nums.length; i++) {
+            path.add(nums[i]);
+            backTracking(nums, i + 1);
             path.remove(path.size() - 1);
         }
     }

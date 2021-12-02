@@ -29,19 +29,19 @@ class Solution491 {
         // 特解 数字范围是 [-100, 100]
         boolean[] used = new boolean[201];
         for (int i = start; i < nums.length; i++) {
-
-            if (pre == null || pre <= nums[i] ) {
-                if (used[nums[i] + 100]) {
-                    continue;
-                }
-                path.add(nums[i]);
-                used[nums[i] + 100] = true;
-                backTracking(i + 1, nums);
-                used[nums[i] + 100] = false;
-                path.remove(path.size() - 1);
+            if ((!path.isEmpty() && path.get(path.size() - 1) > nums[i])
+                    || used[nums[i] + 100] == true) {
+                continue;
             }
-            pre = nums[i];
+            path.add(nums[i]);
+            used[nums[i] + 100] = true;
+            backTracking(i + 1, nums);
+            used[nums[i] + 100] = false;
+            path.remove(path.size() - 1);
+
+
 
         }
     }
 }
+
