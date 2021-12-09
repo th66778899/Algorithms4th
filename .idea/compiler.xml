@@ -10,6 +10,7 @@
         <module name="datastructure" />
         <module name="leetcode" />
         <module name="sort" />
+        <module name="dp" />
         <module name="backtracing" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="chapter01" options="" />
       <module name="chapter02" options="" />
       <module name="datastructure" options="" />
+      <module name="dp" options="" />
       <module name="leetcode" options="" />
       <module name="sort" options="" />
       <module name="tree" options="" />

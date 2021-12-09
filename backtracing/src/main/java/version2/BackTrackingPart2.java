@@ -244,3 +244,80 @@ class Solution37 {
         return true;
     }
 }
+class Solution491_2 {
+    List<List<Integer>> res;
+    List<Integer> path;
+    public List<List<Integer>> findSubsequences(int[] nums) {
+        res = new ArrayList<>();
+        path = new ArrayList<>();
+        backTracking(nums, 0);
+        return res;
+    }
+    private void backTracking(int[] nums, int start) {
+        if (path.size() > 1) {
+            res.add(new ArrayList<>(path));
+        }
+        boolean[] used = new boolean[201];
+        for (int i = start; i < nums.length; i++) {
+            if ((path.size() > 0 && path.get(path.size() - 1) > nums[i]) ||
+                    used[nums[i] + 100] == true) {
+                continue;
+            }
+            path.add(nums[i]);
+            used[nums[i] + 100] = true;
+            backTracking(nums, i + 1);
+            path.remove(path.size() - 1);
+        }
+    }
+}
+class Solution37_2 {
+    public void solveSudoku(char[][] board) {
+        backTracking(board);
+    }
+    private boolean backTracking(char[][] board) {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] != '.') {
+                    continue;
+                }
+                for (char k = '1'; k <= '9'; k++) {
+                    if (check(board, k, i, j)) {
+                        board[i][j] = k;
+                        if (backTracking(board)) {
+                            return true;
+                        }
+                        board[i][j] = '.';
+                    }
+                }
+                // 如果该位置没有能填入的字符
+                // 返回false
+                return false;
+            }
+        }
+        return true;
+    }
+    private boolean check(char[][] board, char chess, int row, int column) {
+        for (int i = 0; i < 9; i++) {
+            if (board[i][column] == chess) {
+                return false;
+            }
+
+        }
+        for (int i = 0; i < 9; i++) {
+            if (board[row][column] == chess) {
+                return false;
+            }
+        }
+        int startRow = (row / 3) * 3;
+        int startColumn = (column / 3) * 3;
+        for (int i = startRow; i < startRow + 3; i++) {
+            for (int j = startColumn; j < startColumn + 3; j++) {
+                if (board[i][j] == chess) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+}
