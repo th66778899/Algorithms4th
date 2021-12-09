@@ -69,3 +69,85 @@ class Solution70 {
         return dp1[n];
     }
 }
+class Solution746 {
+    public int minCostClimbingStairs(int[] cost) {
+        int length = cost.length;
+        // dp[i] 表示 到达第i个阶梯最小花费
+        // 第一步由第0阶开始
+        int[] dp = new int[length + 1];
+        dp[1] = cost[0];
+        dp[2] = cost[1];
+        for (int i = 3; i <= length; i++) {
+            dp[i] = Math.min(dp[i - 1], dp[i - 2]) + cost[i - 1];
+        }
+        return Math.min(dp[length], dp[length - 1]);
+    }
+}
+class Solution62 {
+    public int uniquePaths(int m, int n) {
+        // dp[row][column] 表示到达(row, column) 这点共有 dp[row][column] 条路径
+        int[][] dp = new int[m][n];
+
+        for (int i = 0; i < m; i++) {
+            dp[i][0] = 1;
+        }
+        for (int i = 1; i < n; i++) {
+            dp[0][i] = 1;
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+            }
+        }
+        /*for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(dp[i][j] + " ");
+            }
+            System.out.println();
+        }*/
+        return dp[m - 1][n - 1];
+
+    }
+
+    public static void main(String[] args) {
+        new Solution62().uniquePaths(3, 7);
+    }
+}
+class Solution63 {
+    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        int row = obstacleGrid.length;
+        int column = obstacleGrid[0].length;
+        int[][] dp = new int[row][column];
+        for (int i = 0; i < row; i++) {
+            if (obstacleGrid[i][0] == 1) {
+                break;
+            }
+            dp[i][0] = 1;
+        }
+        for (int i = 1; i < column; i++) {
+            if (obstacleGrid[0][i] == 1) {
+                break;
+            }
+            dp[0][i] = 1;
+        }
+        for (int i = 1; i < row; i++) {
+            for (int j = 1; j < column; j++) {
+                if (obstacleGrid[i][j] == 1) {
+                    continue;
+                }
+                dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+            }
+        }
+        /*for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                System.out.print(dp[i][j]);
+            }
+            System.out.println();
+        }*/
+        return dp[row - 1][column - 1];
+    }
+
+    public static void main(String[] args) {
+        new Solution63().uniquePathsWithObstacles(new int[][]{{0, 1}, {0, 0}});
+    }
+}
