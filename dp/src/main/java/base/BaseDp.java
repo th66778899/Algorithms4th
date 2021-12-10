@@ -151,3 +151,33 @@ class Solution63 {
         new Solution63().uniquePathsWithObstacles(new int[][]{{0, 1}, {0, 0}});
     }
 }
+class Solution343 {
+    public int integerBreak(int n) {
+        int[] dp = new int[n + 1];
+        for (int i = 3; i <= n; i++) {
+            for (int j = 1; n - j > 0 ; j++) {
+                dp[i] = Math.max(dp[i], Math.max(j * (i - j), j * dp[i - j]));
+            }
+        }
+
+        return dp[n];
+    }
+}
+class Solution96 {
+    public int numTrees(int n) {
+        // 思路:后一个二搜索叉树可以由前一个二叉搜索树得出
+        // 头节点为不同的值情况下,左右子树可以分别是之前的二叉搜索树
+        int[] dp = new int[n + 1];
+        dp[0] = 1;// 0个节点的二叉搜索树有一种
+        for (int i = 1; i <= n; i++) {
+            // 头节点分别为不同的值的时候
+            for (int j = 1; j <= i; j++) {
+                dp[i] += dp[j - 1] * dp[i - j];
+            }
+        }
+        for (int i = 0; i <= n; i++) {
+            System.out.print(dp[i] + " ");
+        }
+        return dp[n];
+    }
+}
