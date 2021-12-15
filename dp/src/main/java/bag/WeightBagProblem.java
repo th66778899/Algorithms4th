@@ -139,3 +139,59 @@ class Solution1049 {
         return sum - dp[bagSize] - dp[bagSize];
     }
 }
+class Solution494 {
+    public int findTargetSumWays(int[] nums, int target) {
+        int sum = 0;
+        for (int num : nums) {
+            sum += num;
+        }
+        /*left + right = sum
+        left - right = target
+        left = (sum + target) / 2
+        分出来的集合必须是整数,
+        */
+        if ((sum + target) / 2 % 2 == 1) {
+            return 0;
+        }
+        if (Math.abs(target) > sum) {
+            return 0;
+        }
+        int bagSize = (sum + target) / 2;
+        int[] dp = new int[bagSize + 1];
+        dp[0] = 1;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = bagSize; j >= nums[i]; j--) {
+                dp[j] += dp[j - nums[i]];
+            }
+        }
+        return dp[bagSize];
+    }
+}
+class Solution474 {
+    public int findMaxForm(String[] strs, int m, int n) {
+        // dp数组定义
+        // dp[i][j] 表示 i个0,j个1的字符串的最大个数
+        int[][] dp = new int[m + 1][n + 1];
+        for (String str : strs) {
+            int zeroNum = 0;
+            int oneNum = 0;
+            char[] chars = str.toCharArray();
+            for (char aChar : chars) {
+                if (aChar == '0') {
+                    zeroNum++;
+                } else {
+                    oneNum++;
+                }
+            }
+            // 一个字符串一个字符串地遍历
+            // dp数组全部初始化为0即可
+            // 遍历背包,两个维度 0 的数量和 1的数量
+            for (int i = m; i >= zeroNum; i--) {
+                for (int j = n; j >= oneNum; j--) {
+                    dp[i][j] = Math.max(dp[i][j], dp[i - zeroNum][j - oneNum] + 1);
+                }
+            }
+        }
+        return dp[m][n];
+    }
+}
