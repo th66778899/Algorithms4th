@@ -150,7 +150,7 @@ class Solution494 {
         left = (sum + target) / 2
         分出来的集合必须是整数,
         */
-        if ((sum + target) / 2 % 2 == 1) {
+        if ((sum + target) % 2 == 1) {
             return 0;
         }
         if (Math.abs(target) > sum) {
@@ -163,7 +163,12 @@ class Solution494 {
             for (int j = bagSize; j >= nums[i]; j--) {
                 dp[j] += dp[j - nums[i]];
             }
+            for (int j = 0; j <= bagSize; j++) {
+                System.out.print(dp[j] + " ");
+            }
+            System.out.println();
         }
+
         return dp[bagSize];
     }
 }
@@ -193,5 +198,9 @@ class Solution474 {
             }
         }
         return dp[m][n];
+    }
+
+    public static void main(String[] args) {
+        new Solution474().findMaxForm(new String[]{"10", "0001", "111001", "1","0"}, 5, 3);
     }
 }
