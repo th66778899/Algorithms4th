@@ -1,6 +1,8 @@
 package bag;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Author tho
@@ -167,5 +169,59 @@ class Solution322 {
 
     public static void main(String[] args) {
         new Solution322().coinChange(new int[] {1, 2, 5}, 11);
+    }
+}
+class Solution279 {
+    public int numSquares(int n) {
+        int x = (int) Math.sqrt((double) n);
+        // dp[i] 表示凑成i所需要完全平方数的最小数量
+        int[] dp = new int[n + 1];
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[0] = 0;
+        int[] values = new int[x + 1];
+        for (int i = 0; i <= x; i++) {
+            values[i] = i * i;
+        }
+
+        // 要求的是数量,排列还是组合都一样
+        for (int i = 1; i <= x; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (j >= values[i]) {
+                    dp[j] = Math.min(dp[j], dp[j - values[i]] + 1);
+                }
+            }
+            for (int j = 0; j <= n; j++) {
+                System.out.print(dp[j] + " ");
+            }
+            System.out.println();
+        }
+        return dp[n];
+    }
+}
+class Solution139 {
+    public boolean wordBreak(String s, List<String> wordDict) {
+        // wordDict 就是物品
+        // s 大小就是背包容量 让 dp[i] = i 就是true,物品可以填满背包
+        int bagSize = s.length();
+        boolean[] dp = new boolean[bagSize + 1];
+        // dp[0] = true 为了递推公式使用 , 其他全部为false
+        // 如果确定dp[j] 是true，且 [j, i] 这个区间的子串出现在字典里，那么dp[i]一定是true。（j < i ）。
+        // 所以递推公式是 if([j, i] 这个区间的子串出现在字典里 && dp[j]是true) 那么 dp[i] = true。
+        for (int i = 1; i <= bagSize; i++) {
+            for (int j = 0; j < i; j++) {
+                if (wordDict.contains(s.substring(j, i)) && dp[j] == true) {
+                    dp[i] = true;
+                }
+            }
+        }
+        return dp[bagSize];
+    }
+
+
+    public static void main(String[] args) {
+        List<String> values = new ArrayList<>();
+        values.add("leet");
+        values.add("code");
+        new Solution139().wordBreak("leetcode", values);
     }
 }
